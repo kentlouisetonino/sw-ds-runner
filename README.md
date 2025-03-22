@@ -1,6 +1,6 @@
 ## Description
 
-> - A CLI project that uses Queue and Binary Trees data structure.
+> - A simple CLI project that uses different data structure.
 
 <br />
 <br />
