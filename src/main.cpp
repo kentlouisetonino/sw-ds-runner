@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include "helpers/helpers.hpp"
 
 int main(void) {
@@ -6,9 +7,10 @@ int main(void) {
   clear_terminal();
   new_line();
   new_line();
+
+  // Computer program description.
   new_line();
 
-  std::cout << "Hello";
 
   new_line();
   new_line();
