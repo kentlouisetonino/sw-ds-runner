@@ -6,6 +6,6 @@
 
 extern void show_home_description(void);
 extern void show_home_instruction(void);
-extern void show_home_options(void);
+extern void show_home_options(int width);
 
 #endif

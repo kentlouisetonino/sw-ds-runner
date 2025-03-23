@@ -15,7 +15,7 @@ int main(void) {
   new_lines(3);
 
   // Show the available data structure options.
-  show_home_options();
+  show_home_options(8);
   new_lines(3);
 
   new_lines(3);
