@@ -4,6 +4,7 @@
 
 // Regular text ANSI color codes.
 #define RESET "\e[0m"
+#define RED "\e[31m"
 #define GREEN "\e[0;32m"
 #define BLUE "\e[0;34m"
 #define YELLOW "\e[0;33m"
@@ -22,6 +23,12 @@ void option_formatter(std::string option, std::string type, int width) {
 
   // Display with custom width.
   std::cout << std::setw(option_length) << formatted_option_with_type;
+}
+
+void option_error_formatter(std::string error, int width) {
+  std::string formatted_error = RED + error + RESET;
+  int error_length = formatted_error.length() + width;
+  std::cout << std::setw(error_length) << formatted_error;
 }
 
 void white_text(std::string text, int width) {

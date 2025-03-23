@@ -10,6 +10,7 @@ extern void new_lines(int number);
 
 // Formatted text functions.
 extern void option_formatter(std::string option, std::string type, int width);
+extern void option_error_formatter(std::string error, int width);
 extern void white_text(std::string text, int width);
 extern void green_text(std::string text, int width);
 extern void blue_text(std::string text, int width);
