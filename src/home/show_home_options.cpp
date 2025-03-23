@@ -2,4 +2,4 @@
 #include <iostream>
 #include <string>
 
-void show_options_main(void) {}
+void show_home_options(void) {}

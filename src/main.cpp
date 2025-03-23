@@ -1,5 +1,5 @@
-#include "display/display.hpp"
 #include "helper/helper.hpp"
+#include "home/home.hpp"
 
 int main(void) {
   // Cleanup the terminal.
@@ -7,15 +7,15 @@ int main(void) {
   new_lines(2);
 
   // Computer program description.
-  show_main_description();
+  show_home_description();
   new_lines(3);
 
   // Show the instruction in choosing the option.
-  show_main_instruction();
+  show_home_instruction();
   new_lines(3);
 
   // Show the available data structure options.
-  show_options_main();
+  show_home_options();
   new_lines(3);
 
   new_lines(3);
