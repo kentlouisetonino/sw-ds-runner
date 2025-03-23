@@ -1,6 +1,6 @@
-#include <iostream>
+#include "helper/helper.hpp"
 #include <iomanip>
-#include "helpers/helpers.hpp"
+#include <iostream>
 
 int main(void) {
   // Cleanup the terminal.
@@ -9,18 +9,17 @@ int main(void) {
   new_line();
 
   // Computer program description.
-  blue_text("-------------------------------------------", 5);
+  blue_text("-----------------------------------------------------", 5);
   new_line();
   new_line();
-  green_text("Welcome to Data Structure Runner", 10);
+  green_text("DSRunner", 27);
   new_line();
   new_line();
-  white_text("Author: Kent Louise Tonino", 13);
+  white_text("A CLI that implements different Data Structure.", 8);
   new_line();
   new_line();
-  blue_text("-------------------------------------------", 5);
+  blue_text("-----------------------------------------------------", 5);
   new_line();
-
 
   new_line();
   new_line();

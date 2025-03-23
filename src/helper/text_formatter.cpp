@@ -1,6 +1,6 @@
+#include <iomanip>
 #include <iostream>
 #include <string>
-#include <iomanip>
 
 // Regular text ANSI color codes.
 #define BLUE "\e[0;34m"
@@ -25,7 +25,7 @@ void green_text(std::string text, int width) {
 }
 
 void white_text(std::string text, int width) {
-  std::string formatted_text = WHITE  + text + RESET;
+  std::string formatted_text = WHITE + text + RESET;
   int formatted_text_length = formatted_text.length();
   int total_formatted_text_length = formatted_text_length + width;
 
