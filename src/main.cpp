@@ -8,10 +8,12 @@ int main(void) {
   clear_terminal();
   new_lines(2);
 
-  // Computer program description and instructions.
+  // Computer program description.
   show_app_description();
   new_lines(3);
-  yellow_text("Please choose an number for a Data Structure:", 8);
+
+  // Show the instruction in choosing the option.
+  show_app_instruction();
   new_lines(3);
 
   new_lines(3);
