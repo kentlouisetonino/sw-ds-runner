@@ -6,15 +6,14 @@
 int main(void) {
   // Cleanup the terminal.
   clear_terminal();
-  new_line();
-  new_line();
+  new_lines(2);
 
-  // Computer program description.
+  // Computer program description and instructions.
   show_app_description();
-  new_line();
+  new_lines(3);
+  yellow_text("Please choose an number for a Data Structure:", 8);
+  new_lines(3);
 
-  new_line();
-  new_line();
-
+  new_lines(3);
   return 0;
 }

@@ -3,13 +3,10 @@
 void show_app_description(void) {
 
   blue_text("-----------------------------------------------------", 7);
-  new_line();
-  new_line();
+  new_lines(2);
   green_text("DSRunner", 29);
-  new_line();
-  new_line();
+  new_lines(2);
   white_text("A CLI that implements different Data Structure.", 10);
-  new_line();
-  new_line();
+  new_lines(2);
   blue_text("-----------------------------------------------------", 7);
 }
