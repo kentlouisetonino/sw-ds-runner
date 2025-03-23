@@ -1,6 +1,6 @@
 #include "../helper/helper.hpp"
 
-void show_app_description(void) {
+void show_main_description(void) {
   blue_text("-----------------------------------------------------", 7);
   new_lines(2);
   green_text("DSRunner", 29);
