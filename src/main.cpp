@@ -1,5 +1,6 @@
 #include "helper/helper.hpp"
 #include "home/home.hpp"
+#include "queue/queue.hpp"
 
 int main(void) {
   bool is_valid_option = false;
@@ -39,6 +40,8 @@ int main(void) {
       }
 
       continue;
+    } else if (option == 1) {
+      queue();
     } else {
       has_error = false;
       std::cout << option;
