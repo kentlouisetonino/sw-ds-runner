@@ -3,8 +3,10 @@
 #include "clear_terminal.cpp"
 #include "new_lines.cpp"
 #include "formatter.cpp"
+#include "clear_input_buffer.cpp"
 
 // Terminal cleaning functions.
+extern void clear_input_buffer(void);
 extern void clear_terminal(void);
 extern void new_lines(int number);
 

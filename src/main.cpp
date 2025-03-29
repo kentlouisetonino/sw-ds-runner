@@ -35,8 +35,7 @@ int main(void) {
     if (option == 0) {
       if (std::cin.fail()) {
         has_error = true;
-        std::cin.clear();
-        std::cin.ignore();
+        clear_input_buffer();
       }
 
       continue;
