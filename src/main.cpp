@@ -27,7 +27,7 @@ int main(void) {
 
     // Show the available data structure options.
     show_home_options(8);
-    new_lines(3);
+    new_lines(2);
 
     // Show
     int option;
