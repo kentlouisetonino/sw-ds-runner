@@ -9,7 +9,7 @@ int main(void) {
   while (is_valid_option == false) {
     // Cleanup the terminal.
     clear_terminal();
-    new_lines(2);
+    new_lines(3);
 
     // Computer program description.
     show_home_description(7);
@@ -42,6 +42,8 @@ int main(void) {
       continue;
     } else if (option == 1) {
       queue();
+      has_error = false;
+      continue;
     } else {
       has_error = false;
       std::cout << option;
