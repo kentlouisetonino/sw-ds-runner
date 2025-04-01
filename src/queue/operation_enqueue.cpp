@@ -14,7 +14,7 @@ operation_enqueue(std::queue<std::string> queue_storage) {
     // Show the option description.
     blue_text("-----------------------------------------------------", 7);
     new_lines(2);
-    green_text("Enqueue Operation", 24);
+    green_text("Queue Enqueue Operation", 22);
     new_lines(2);
     white_text("Adds element to the end of the Queue.", 15);
     new_lines(2);
