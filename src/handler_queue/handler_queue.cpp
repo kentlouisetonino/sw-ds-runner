@@ -1,8 +1,8 @@
 #include "../helper/helper.hpp"
-#include "./operation_display.cpp"
+#include "./operation_dequeue.cpp"
 #include "./operation_enqueue.cpp"
 
-void queue(void) {
+void handler_queue(void) {
   std::queue<std::string> queue_storage;
   bool is_option_invalid = false;
 
@@ -57,7 +57,8 @@ void queue(void) {
       is_option_invalid = false;
       continue;
     } else if (input == 2) {
-      break;
+      queue_storage = operation_dequeue(queue_storage);
+      continue;
     } else if (input == 3) {
       operation_display(queue_storage);
       continue;
