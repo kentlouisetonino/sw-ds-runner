@@ -1,22 +1,6 @@
 #include "../helper/helper.hpp"
+#include "./operation_display.cpp"
 #include "./operation_enqueue.cpp"
-#include <queue>
-
-void show_queue(std::queue<std::string> current_queue) {
-  std::queue<std::string> current = current_queue;
-
-  while (!current.empty()) {
-    // Print the values.
-    std::string current_head = current.front();
-    std::cout << "Current Head: " << current_head;
-    new_lines(1);
-
-    // Remove the current head.
-    current.pop();
-  }
-
-  new_lines(1);
-}
 
 void queue(void) {
   std::queue<std::string> queue_storage;
@@ -25,10 +9,7 @@ void queue(void) {
   while (true) {
     // Cleanup the terminal.
     clear_terminal();
-    new_lines(2);
-
-    // TEMPORARY: Display the current queue.
-    show_queue(queue_storage);
+    new_lines(3);
 
     // Show the option description.
     blue_text("-----------------------------------------------------", 7);
@@ -78,7 +59,8 @@ void queue(void) {
     } else if (input == 2) {
       break;
     } else if (input == 3) {
-      break;
+      operation_display(queue_storage);
+      continue;
     } else if (input == 4) {
       break;
     } else if (input == 5) {
