@@ -4,7 +4,7 @@
 
 <br />
 
-> - A simple CLI project that uses different data structure.
+> - A simple CLI project that uses different Data Structure.
 
 <br />
 <br />
