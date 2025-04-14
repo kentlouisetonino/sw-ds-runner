@@ -1,4 +1,5 @@
 #include "common/common.hpp"
+#include "handler_binary_tree/handler_binary_tree.hpp"
 #include "handler_home/handler_home.hpp"
 #include "handler_queue/handler_queue.hpp"
 
@@ -20,6 +21,10 @@ int main(void) {
       continue;
     } else if (option == 1) {
       handler_queue();
+      has_error = false;
+      continue;
+    } else if (option == 2) {
+      handler_binary_tree();
       has_error = false;
       continue;
     } else if (option == 3) {
