@@ -1,0 +1,4 @@
+#ifndef HANDLER_BINARY_TREE_HPP
+#define HANDLER_BINARY_TREE_HPP
+
+#endif
