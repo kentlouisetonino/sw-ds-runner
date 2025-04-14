@@ -8,6 +8,17 @@
 > - A simple CLI project that uses different Data Structure.
 
 <br />
+
+| Operation | Status |
+| -------- | ------ |
+| `Queue Enqueue` | ✅ |
+| `Queue Dequeue` | ✅ |
+| `Queue Display` | ✅ |
+| `Queue Front` | ✅ |
+| `Queue Rear` | ✅ |
+
+
+<br />
 <br />
 
 
