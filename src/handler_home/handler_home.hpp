@@ -1,13 +1,7 @@
 #ifndef HANDLER_HOME_HPP
 #define HANDLER_HOME_HPP
-#include "./show_home_description.cpp"
-#include "./show_home_instruction.cpp"
-#include "./show_home_options.cpp"
-#include "./get_home_input.cpp"
+#include "./handler_home.cpp"
 
-extern int get_home_input(int width);
-extern void show_home_description(int width);
-extern void show_home_instruction(int width);
-extern void show_home_options(int width);
+extern int handler_home(bool has_error);
 
 #endif
