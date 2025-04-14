@@ -1,6 +1,6 @@
+#include "common/common.hpp"
 #include "handler_home/handler_home.hpp"
 #include "handler_queue/handler_queue.hpp"
-#include "helper/helper.hpp"
 
 int main(void) {
   bool is_valid_option = false;

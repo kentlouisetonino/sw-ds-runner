@@ -1,5 +1,5 @@
-#ifndef HELPER_HPP
-#define HELPER_HPP
+#ifndef COMMON_HPP
+#define COMMON_HPP
 #include "clear_terminal.cpp"
 #include "new_lines.cpp"
 #include "formatter.cpp"
@@ -17,6 +17,5 @@ extern void white_text(std::string text, int width);
 extern void green_text(std::string text, int width);
 extern void blue_text(std::string text, int width);
 extern void yellow_text(std::string text, int width);
-
 
 #endif
