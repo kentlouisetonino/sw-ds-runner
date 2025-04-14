@@ -1,14 +1,16 @@
 #include "../common/common.hpp"
 #include <queue>
+#include <string>
+using namespace std;
 
-void show_queue(std::queue<std::string> queue_storage) {
+void show_queue(queue<string> queue_storage) {
   int queue_count = 1;
   std::queue<std::string> current = queue_storage;
 
   while (!current.empty()) {
     // Print the values.
-    std::string current_head = current.front();
-    option_formatter(std::to_string(queue_count), current_head, 8);
+    string current_head = current.front();
+    option_formatter(to_string(queue_count), current_head, 8);
     queue_count++;
     new_lines(1);
 
@@ -17,7 +19,7 @@ void show_queue(std::queue<std::string> queue_storage) {
   }
 }
 
-void operation_display(std::queue<std::string> queue_storage) {
+void operation_display(queue<string> queue_storage) {
   while (true) {
     // Cleanup the terminal.
     clear_terminal();
@@ -40,7 +42,7 @@ void operation_display(std::queue<std::string> queue_storage) {
     // Handle adding another values.
     char try_again;
     white_text("Show again? [y/n]: ", 8);
-    std::cin >> try_again;
+    cin >> try_again;
     clear_input_buffer();
 
     if (try_again == 'y') {

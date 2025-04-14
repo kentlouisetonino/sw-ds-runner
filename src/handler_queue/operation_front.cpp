@@ -27,7 +27,7 @@ void operation_front(queue<string> queue_storage) {
     // Handle adding another values.
     char try_again;
     white_text("Show again? [y/n]: ", 8);
-    std::cin >> try_again;
+    cin >> try_again;
     clear_input_buffer();
 
     if (try_again == 'y') {
