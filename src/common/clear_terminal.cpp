@@ -1,3 +1,4 @@
 #include <cstdlib>
+using namespace std;
 
-void clear_terminal(void) { std::system("clear"); }
+void clear_terminal(void) { system("clear"); }

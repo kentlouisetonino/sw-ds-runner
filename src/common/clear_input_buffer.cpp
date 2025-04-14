@@ -1,6 +1,7 @@
 #include <iostream>
+using namespace std;
 
 void clear_input_buffer(void) {
-  std::cin.clear();
-  std::cin.ignore();
+  cin.clear();
+  cin.ignore();
 }
