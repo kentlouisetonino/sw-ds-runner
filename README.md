@@ -9,7 +9,7 @@
 
 <br />
 
-| Operation | Status |
+| Feature | Status |
 | -------- | ------ |
 | `Queue Enqueue` | ✅ |
 | `Queue Dequeue` | ✅ |
