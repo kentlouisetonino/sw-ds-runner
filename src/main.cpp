@@ -45,9 +45,6 @@ int main(void) {
       has_error = false;
       continue;
     } else {
-      has_error = false;
-      std::cout << option;
-      new_lines(3);
       break;
     }
   }

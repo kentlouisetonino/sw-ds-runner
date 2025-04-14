@@ -2,6 +2,7 @@
 #include "./operation_dequeue.cpp"
 #include "./operation_enqueue.cpp"
 #include "./operation_front.cpp"
+#include "./operation_rear.cpp"
 
 void handler_queue(void) {
   std::queue<std::string> queue_storage;
@@ -69,7 +70,9 @@ void handler_queue(void) {
       is_option_invalid = false;
       continue;
     } else if (input == 5) {
-      break;
+      operation_rear(queue_storage);
+      is_option_invalid = false;
+      continue;
     } else if (input == 6) {
       break;
     } else {
