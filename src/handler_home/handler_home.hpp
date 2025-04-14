@@ -1,5 +1,5 @@
-#ifndef HOME_HPP
-#define HOME_HPP
+#ifndef HANDLER_HOME_HPP
+#define HANDLER_HOME_HPP
 #include "./show_home_description.cpp"
 #include "./show_home_instruction.cpp"
 #include "./show_home_options.cpp"
