@@ -44,8 +44,12 @@ int main(void) {
       handler_queue();
       has_error = false;
       continue;
-    } else {
+    } else if (option == 3) {
       break;
+    } else {
+      has_error = true;
+      clear_input_buffer();
+      continue;
     }
   }
 
