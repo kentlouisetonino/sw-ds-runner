@@ -8,7 +8,6 @@ int main(void) {
   bool has_error = false;
 
   while (is_valid_option == false) {
-    // Show
     int option;
     option = handler_home(has_error);
 
