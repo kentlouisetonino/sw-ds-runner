@@ -1,6 +1,9 @@
 #include "../common/common.hpp"
+#include "./operation_insert.cpp"
+#include "./types.hpp"
 
 void handler_binary_tree(void) {
+  BinaryTreeNode *root_node = nullptr;
   bool is_option_invalid = false;
 
   while (true) {
@@ -48,6 +51,10 @@ void handler_binary_tree(void) {
 
     // Handle which operations to show.
     if (input == 5) {
+      break;
+    } else if (input == 1) {
+      operation_insert(root_node);
+      is_option_invalid = false;
       break;
     } else {
       is_option_invalid = true;
