@@ -35,9 +35,14 @@ void operation_display(queue<string> queue_storage) {
     blue_text("-----------------------------------------------------", 7);
     new_lines(3);
 
-    // Show the current queue.
-    show_queue(queue_storage);
-    new_lines(2);
+    /* Show the current queue. */
+    if (queue_storage.size() == 0) {
+      yellow_text("Queue storage is empty.", 8);
+      new_lines(3);
+    } else {
+      show_queue(queue_storage);
+      new_lines(2);
+    }
 
     // Handle adding another values.
     char try_again;
