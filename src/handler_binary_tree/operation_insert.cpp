@@ -1,32 +1,15 @@
 #include "../common/common.hpp"
-#include "./types.hpp"
+#include "get_tree.cpp"
+#include "operation_inorder_traversal.cpp"
+#include "types.hpp"
 
-void operation_insert(BinaryTreeNode *root_node) {
+void operation_insert(BinaryTreeNode *tree) {
   bool is_option_invalid = false;
 
   while (true) {
     /* Cleanup the Terminal */
     clear_terminal();
     new_lines(3);
-
-    /* Check the Current Node Values */
-    if (root_node != nullptr) {
-      cout << "Data: " << root_node->data << endl;
-
-      if (root_node->left != nullptr) {
-        cout << "Left Data: " << root_node->left->data << endl;
-      }
-
-      if (root_node->right != nullptr) {
-        cout << "Right Data:" << root_node->right->data << endl;
-      }
-    }
-    //  if (root_node->left != nullptr) {
-    //    cout << "Left Data" << root_node->left;
-    //  }
-    //  if (root_node->left != nullptr) {
-    //    cout << "Right Data" << root_node->right;
-    //  }
 
     /* Option Description */
     blue_text("-----------------------------------------------------------", 7);
@@ -53,29 +36,9 @@ void operation_insert(BinaryTreeNode *root_node) {
     white_text("Enter data: ", 8);
     std::cin >> input;
     clear_input_buffer();
-    cout << input;
 
-    if (input > 0) {
-      if (root_node == nullptr) {
-        root_node = new BinaryTreeNode(input);
-      } else {
-        BinaryTreeNode *new_node = new BinaryTreeNode(input);
-        BinaryTreeNode *current_left_node = root_node->left;
-        BinaryTreeNode *current_right_node = root_node->right;
-
-        if (current_left_node == nullptr) {
-          root_node->left = new_node;
-        } else if (current_right_node == nullptr) {
-          root_node->right = new_node;
-        } else {
-          root_node->left = new_node;
-        }
-      }
-
-      continue;
-    } else {
-      is_option_invalid = true;
-      continue;
-    }
+    /* Testing null pointer */
+    tree = get_tree(tree, input);
+    operation_inorder_traversal(tree);
   }
 }

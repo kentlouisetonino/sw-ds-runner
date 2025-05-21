@@ -3,7 +3,8 @@
 #include "./types.hpp"
 
 void handler_binary_tree(void) {
-  BinaryTreeNode *root_node = nullptr;
+  int *level = 0;
+  BinaryTreeNode *tree = nullptr;
   bool is_option_invalid = false;
 
   while (true) {
@@ -53,7 +54,7 @@ void handler_binary_tree(void) {
     if (input == 5) {
       break;
     } else if (input == 1) {
-      operation_insert(root_node);
+      operation_insert(tree);
       is_option_invalid = false;
       break;
     } else {

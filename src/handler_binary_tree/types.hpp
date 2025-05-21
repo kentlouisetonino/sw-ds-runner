@@ -1,9 +1,11 @@
 #ifndef TYPES_H
 #define TYPES_H
 
+/*
+ * This structure only accept number as data.
+ * */
 struct BinaryTreeNode {
   int data;
-
   BinaryTreeNode *left;
   BinaryTreeNode *right;
 
