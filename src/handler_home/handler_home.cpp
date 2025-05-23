@@ -1,8 +1,8 @@
 #include "../_common/common.hpp"
-#include "./get_home_input.cpp"
-#include "./show_home_description.cpp"
-#include "./show_home_instruction.cpp"
-#include "./show_home_options.cpp"
+#include "get_home_input.cpp"
+#include "show_home_description.cpp"
+#include "show_home_instruction.cpp"
+#include "show_home_options.cpp"
 
 int handler_home(bool has_error) {
   // Cleanup the terminal.
