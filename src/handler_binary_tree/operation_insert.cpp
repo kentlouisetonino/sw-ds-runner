@@ -1,7 +1,22 @@
 #include "../_common/common.hpp"
-#include "insert_node.cpp"
-#include "operation_inorder_traversal.cpp"
+#include "operation_preorder_traversal.cpp"
 #include "types.hpp"
+
+BinaryTreeNode *insert_node(BinaryTreeNode *root_node, int input) {
+  if (root_node == nullptr) {
+    return new BinaryTreeNode(input);
+  }
+
+  if (input < root_node->data) {
+    root_node->left = insert_node(root_node->left, input);
+  } else if (input > root_node->data) {
+    root_node->right = insert_node(root_node->right, input);
+  } else {
+    return root_node;
+  }
+
+  return root_node;
+}
 
 void operation_insert(BinaryTreeNode *tree) {
   bool is_option_invalid = false;
@@ -37,8 +52,6 @@ void operation_insert(BinaryTreeNode *tree) {
     std::cin >> input;
     clear_input_buffer();
 
-    /* Testing null pointer */
     tree = insert_node(tree, input);
-    operation_inorder_traversal(tree);
   }
 }
