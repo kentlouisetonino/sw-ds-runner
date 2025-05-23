@@ -1,5 +1,5 @@
 #include "../_common/common.hpp"
-#include "get_tree.cpp"
+#include "insert_node.cpp"
 #include "operation_inorder_traversal.cpp"
 #include "types.hpp"
 
@@ -38,7 +38,7 @@ void operation_insert(BinaryTreeNode *tree) {
     clear_input_buffer();
 
     /* Testing null pointer */
-    tree = get_tree(tree, input);
+    tree = insert_node(tree, input);
     operation_inorder_traversal(tree);
   }
 }
