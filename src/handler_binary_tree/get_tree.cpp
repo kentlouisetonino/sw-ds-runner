@@ -1,4 +1,4 @@
-#include "./types.hpp"
+#include "types.hpp"
 
 /*
  * This function return the tree relative to
