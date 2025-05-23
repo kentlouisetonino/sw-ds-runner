@@ -19,7 +19,7 @@ BinaryTreeNode *_insert_node(BinaryTreeNode *root_node, int input) {
   return root_node;
 }
 
-void operation_insert(BinaryTreeNode *tree) {
+void operation_insert(BinaryTreeNode *&tree) {
   bool is_option_invalid = false;
 
   while (true) {
