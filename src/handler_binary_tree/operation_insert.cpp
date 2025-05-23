@@ -30,9 +30,9 @@ void operation_insert(BinaryTreeNode *&tree) {
     /* Option Description */
     blue_text("-----------------------------------------------------------", 7);
     new_lines(2);
-    green_text("Binary Tree: Insert", 27);
+    green_text("Binary Tree", 31);
     new_lines(2);
-    white_text("This allows you to insert a data in tree.", 16);
+    white_text("Operation Insert", 28);
     new_lines(2);
     blue_text("-----------------------------------------------------------", 7);
     new_lines(3);

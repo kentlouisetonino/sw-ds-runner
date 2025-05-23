@@ -12,10 +12,6 @@ void _show_inorder_traversal(BinaryTreeNode *root_node) {
   }
 }
 
-/*
- * This function print the data from lowest to highest.
- *
- * */
 void operation_inorder_traversal(BinaryTreeNode *root_node) {
   while (true) {
     /* Cleanup the Terminal */
@@ -27,13 +23,13 @@ void operation_inorder_traversal(BinaryTreeNode *root_node) {
     new_lines(2);
     green_text("Binary Tree", 31);
     new_lines(2);
-    white_text("Inorder Traversal", 28);
+    white_text("Operation Inorder Traversal", 23);
     new_lines(2);
     blue_text("-----------------------------------------------------------", 7);
     new_lines(3);
 
     if (root_node == nullptr) {
-      /* Show the user that the value is successfully inserted. */
+      /* Show that the tree is empty. */
       yellow_text("Binary tree is empty.", 8);
       new_lines(3);
     } else {
@@ -41,14 +37,14 @@ void operation_inorder_traversal(BinaryTreeNode *root_node) {
       new_lines(3);
     }
 
-    /* Ask user if want to insert new value. */
-    char try_again;
+    /* Ask user if want to exit. */
+    char back;
     white_text("Go back to Binary tree menu? [y/n]: ", 8);
-    cin >> try_again;
+    cin >> back;
     clear_input_buffer();
 
-    /* Handle the try again input. */
-    if (try_again == 'y') {
+    /* Handle the back input value. */
+    if (back == 'y') {
       break;
     } else {
       continue;
