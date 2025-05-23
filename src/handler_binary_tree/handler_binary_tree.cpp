@@ -56,7 +56,7 @@ void handler_binary_tree(void) {
     } else if (input == 1) {
       operation_insert(tree);
       is_option_invalid = false;
-      break;
+      continue;
     } else {
       is_option_invalid = true;
       continue;
