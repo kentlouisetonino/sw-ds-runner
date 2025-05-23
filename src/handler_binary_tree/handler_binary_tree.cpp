@@ -1,6 +1,7 @@
 #include "../_common/common.hpp"
 #include "operation_inorder_traversal.cpp"
 #include "operation_insert.cpp"
+#include "operation_postorder_traversal.cpp"
 #include "types.hpp"
 
 void handler_binary_tree(void) {
@@ -64,6 +65,10 @@ void handler_binary_tree(void) {
       continue;
     } else if (input == 3) {
       operation_preorder_traversal(tree);
+      is_option_invalid = false;
+      continue;
+    } else if (input == 4) {
+      operation_postorder_traversal(tree);
       is_option_invalid = false;
       continue;
     } else {
