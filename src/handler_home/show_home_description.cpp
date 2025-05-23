@@ -1,4 +1,4 @@
-#include "../common/common.hpp"
+#include "../_common/common.hpp"
 
 void show_home_description(int width) {
   blue_text("-----------------------------------------------------", width);

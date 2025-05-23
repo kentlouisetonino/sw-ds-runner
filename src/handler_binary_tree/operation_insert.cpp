@@ -1,4 +1,4 @@
-#include "../common/common.hpp"
+#include "../_common/common.hpp"
 #include "get_tree.cpp"
 #include "operation_inorder_traversal.cpp"
 #include "types.hpp"
