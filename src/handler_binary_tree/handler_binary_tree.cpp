@@ -62,6 +62,10 @@ void handler_binary_tree(void) {
       operation_inorder_traversal(tree);
       is_option_invalid = false;
       continue;
+    } else if (input == 3) {
+      operation_preorder_traversal(tree);
+      is_option_invalid = false;
+      continue;
     } else {
       is_option_invalid = true;
       continue;
