@@ -16,6 +16,10 @@
 | `Queue Display` | ✅ |
 | `Queue Front` | ✅ |
 | `Queue Rear` | ✅ |
+| `Binary Tree Insert` | ✅ |
+| `Binary Tree Inorder Traversal` | ✅ |
+| `Binary Tree Preorder Traversal` | ✅ |
+| `Binary Tree Postorder Traversal` | ✅ |
 
 
 <br />
