@@ -1,8 +1,8 @@
 #include "../_common/common.hpp"
-#include "./operation_dequeue.cpp"
-#include "./operation_enqueue.cpp"
-#include "./operation_front.cpp"
-#include "./operation_rear.cpp"
+#include "operation_dequeue.cpp"
+#include "operation_enqueue.cpp"
+#include "operation_front.cpp"
+#include "operation_rear.cpp"
 
 void handler_queue(void) {
   std::queue<std::string> queue_storage;
