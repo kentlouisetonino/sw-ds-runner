@@ -1,6 +1,6 @@
 #include "../_common/common.hpp"
-#include "./operation_insert.cpp"
-#include "./types.hpp"
+#include "operation_insert.cpp"
+#include "types.hpp"
 
 void handler_binary_tree(void) {
   int *level = 0;
