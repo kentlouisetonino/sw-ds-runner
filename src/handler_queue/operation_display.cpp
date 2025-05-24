@@ -8,24 +8,22 @@ void show_queue(queue<string> queue_storage) {
   std::queue<std::string> current = queue_storage;
 
   while (!current.empty()) {
-    // Print the values.
+    /* Print the value. */
     string current_head = current.front();
     option_formatter(to_string(queue_count), current_head, 8);
     queue_count++;
     new_lines(1);
 
-    // Remove the current head.
+    /* Remove the current head. */
     current.pop();
   }
 }
 
 void operation_display(queue<string> queue_storage) {
   while (true) {
-    // Cleanup the terminal.
     clear_terminal();
     new_lines(3);
 
-    // Show the option description.
     blue_text("-----------------------------------------------------", 7);
     new_lines(2);
     green_text("Queue Display Operation", 22);
@@ -35,7 +33,6 @@ void operation_display(queue<string> queue_storage) {
     blue_text("-----------------------------------------------------", 7);
     new_lines(3);
 
-    /* Show the current queue. */
     if (queue_storage.size() == 0) {
       yellow_text("Queue storage is empty.", 8);
       new_lines(3);
@@ -44,7 +41,6 @@ void operation_display(queue<string> queue_storage) {
       new_lines(2);
     }
 
-    // Handle adding another values.
     char try_again;
     white_text("Show again? [y/n]: ", 8);
     cin >> try_again;

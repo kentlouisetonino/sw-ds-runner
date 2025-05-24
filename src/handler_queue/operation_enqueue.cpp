@@ -7,11 +7,9 @@ queue<string> operation_enqueue(queue<string> queue_storage) {
   queue<string> current_queue = queue_storage;
 
   while (true) {
-    // Cleanup the terminal.
     clear_terminal();
     new_lines(3);
 
-    // Show the option description.
     blue_text("-----------------------------------------------------", 7);
     new_lines(2);
     green_text("Queue Enqueue Operation", 22);
@@ -21,20 +19,17 @@ queue<string> operation_enqueue(queue<string> queue_storage) {
     blue_text("-----------------------------------------------------", 7);
     new_lines(3);
 
-    // Handle the input.
     string input;
     white_text("Enter element to be enqueue: ", 8);
     cin >> input;
     clear_input_buffer();
     new_lines(2);
 
-    // Show the inserted value.
     current_queue.push(input);
     white_text("Inserted:", 8);
     green_text(input, 1);
     new_lines(3);
 
-    // Handle adding another values.
     char try_again;
     white_text("Add another element? [y/n]: ", 8);
     cin >> try_again;
