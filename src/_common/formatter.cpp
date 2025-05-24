@@ -3,7 +3,7 @@
 #include <string>
 using namespace std;
 
-// Regular text ANSI color codes.
+/* Regular text ANSI color codes. */
 #define RESET "\e[0m"
 #define RED "\e[31m"
 #define GREEN "\e[0;32m"

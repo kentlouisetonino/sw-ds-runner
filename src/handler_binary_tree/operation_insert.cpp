@@ -23,11 +23,9 @@ void operation_insert(BinaryTreeNode *&tree) {
   bool is_option_invalid = false;
 
   while (true) {
-    /* Cleanup the Terminal */
     clear_terminal();
     new_lines(3);
 
-    /* Option Description */
     blue_text("-----------------------------------------------------------", 7);
     new_lines(2);
     green_text("Binary Tree", 31);
@@ -37,37 +35,42 @@ void operation_insert(BinaryTreeNode *&tree) {
     blue_text("-----------------------------------------------------------", 7);
     new_lines(3);
 
-    /* Input Instruction */
+    /*
+     * Inform the user to use number values only.
+     *
+     * */
     yellow_text("Please note, only number data is allowed.", 8);
     new_lines(3);
 
-    /* Handle Error Message */
     if (is_option_invalid) {
       option_error_formatter("Invalid input. Please try again.", 8);
       new_lines(3);
     }
 
-    /* Handle Input */
     int input;
     white_text("Enter data: ", 8);
     cin >> input;
     clear_input_buffer();
 
-    /* Insert the new value in tree. */
+    /*
+     * Apply the updated tree.
+     *
+     * */
     tree = _insert_node(tree, input);
     new_lines(2);
 
-    /* Show the user that the value is successfully inserted. */
+    /*
+     * Show the user that the value is successfully inserted.
+     *
+     * */
     green_text("New data inserted successfully.", 8);
     new_lines(3);
 
-    /* Ask user if want to insert new value. */
     char try_again;
     white_text("Insert another data? [y/n]: ", 8);
     cin >> try_again;
     clear_input_buffer();
 
-    /* Handle the try again input. */
     if (try_again == 'y') {
       continue;
     } else {

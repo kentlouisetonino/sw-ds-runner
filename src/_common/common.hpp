@@ -5,12 +5,12 @@
 #include "formatter.cpp"
 #include "clear_input_buffer.cpp"
 
-// Terminal cleaning functions.
+/* Terminal cleaning functions. */
 extern void clear_input_buffer(void);
 extern void clear_terminal(void);
 extern void new_lines(int number);
 
-// Formatted text functions.
+/* Formatting text functions. */
 extern void option_formatter(std::string option, std::string type, int width);
 extern void option_error_formatter(std::string error, int width);
 extern void white_text(std::string text, int width);

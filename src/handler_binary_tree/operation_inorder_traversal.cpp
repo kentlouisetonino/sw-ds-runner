@@ -14,11 +14,9 @@ void _show_inorder_traversal(BinaryTreeNode *root_node) {
 
 void operation_inorder_traversal(BinaryTreeNode *root_node) {
   while (true) {
-    /* Cleanup the Terminal */
     clear_terminal();
     new_lines(3);
 
-    /* Option Description */
     blue_text("-----------------------------------------------------------", 7);
     new_lines(2);
     green_text("Binary Tree", 31);
@@ -29,7 +27,6 @@ void operation_inorder_traversal(BinaryTreeNode *root_node) {
     new_lines(3);
 
     if (root_node == nullptr) {
-      /* Show that the tree is empty. */
       yellow_text("Binary tree is empty.", 8);
       new_lines(3);
     } else {
@@ -37,13 +34,11 @@ void operation_inorder_traversal(BinaryTreeNode *root_node) {
       new_lines(3);
     }
 
-    /* Ask user if want to exit. */
     char back;
     white_text("Go back to Binary tree menu? [y/n]: ", 8);
     cin >> back;
     clear_input_buffer();
 
-    /* Handle the back input value. */
     if (back == 'y') {
       break;
     } else {
