@@ -12,6 +12,7 @@ int main(void) {
     option = handler_home(has_error);
 
     if (option == 0) {
+      has_error = true;
       continue;
     } else if (option == 1) {
       handler_queue();
@@ -25,7 +26,6 @@ int main(void) {
       break;
     } else {
       has_error = true;
-      clear_input_buffer();
       continue;
     }
   }
