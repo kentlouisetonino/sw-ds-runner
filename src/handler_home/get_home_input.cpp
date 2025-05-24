@@ -6,6 +6,7 @@ int get_home_input(int width) {
 
   white_text("Enter data structure option: ", width);
   std::cin >> input;
+  clear_input_buffer();
 
   return input;
 }

@@ -12,11 +12,6 @@ int main(void) {
     option = handler_home(has_error);
 
     if (option == 0) {
-      if (cin.fail()) {
-        has_error = true;
-        clear_input_buffer();
-      }
-
       continue;
     } else if (option == 1) {
       handler_queue();
