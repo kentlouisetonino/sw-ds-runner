@@ -5,7 +5,7 @@
 
 <br />
 
-> - A simple CLI project that uses different Data Structure.
+> - A CLI project that implements different Data Structure using C++.
 
 <br />
 
