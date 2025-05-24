@@ -9,11 +9,9 @@ void handler_queue(void) {
   bool is_option_invalid = false;
 
   while (true) {
-    /* Cleanup Terminal */
     clear_terminal();
     new_lines(3);
 
-    /* Data Structure Description */
     blue_text("-----------------------------------------------------", 7);
     new_lines(2);
     green_text("Queue", 29);
@@ -23,17 +21,14 @@ void handler_queue(void) {
     blue_text("-----------------------------------------------------", 7);
     new_lines(3);
 
-    /* Instruction */
     yellow_text("Please choose an operation for Queue:", 8);
     new_lines(3);
 
-    /* Error Message */
     if (is_option_invalid) {
       option_error_formatter("Invalid input. Please try again.", 8);
       new_lines(3);
     }
 
-    /* Queue Operations */
     option_formatter("1", "Enqueue", 8);
     new_lines(1);
     option_formatter("2", "Dequeue", 8);
@@ -47,13 +42,11 @@ void handler_queue(void) {
     option_formatter("6", "Exit", 8);
     new_lines(3);
 
-    /* Input Handling */
     int input;
     white_text("Enter data structure option: ", 8);
     std::cin >> input;
     clear_input_buffer();
 
-    /* Queue Operations Mapping */
     if (input == 1) {
       queue_storage = operation_enqueue(queue_storage);
       is_option_invalid = false;
