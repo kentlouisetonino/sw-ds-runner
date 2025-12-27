@@ -6,6 +6,7 @@
 <br />
 
 > - A CLI project that implements different Data Structure using C++.
+> - A practice project while learning Data Structure and Algorithms.
 
 <br />
 
@@ -20,7 +21,7 @@
 | `Binary Tree Inorder Traversal` | ✅ |
 | `Binary Tree Preorder Traversal` | ✅ |
 | `Binary Tree Postorder Traversal` | ✅ |
-
+| `In Progress` | ... |
 
 <br />
 <br />
