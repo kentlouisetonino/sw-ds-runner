@@ -1,4 +1,4 @@
-name: SW - DSRunner (develop)
+name: DSRunner (develop)
 
 on:
   push:
