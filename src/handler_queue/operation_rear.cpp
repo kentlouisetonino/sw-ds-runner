@@ -1,4 +1,4 @@
-#include "../_common/common.hpp"
+#include "../_libs/libs.hpp"
 #include <queue>
 #include <string>
 using namespace std;

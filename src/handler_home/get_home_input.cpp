@@ -1,4 +1,4 @@
-#include "../_common/common.hpp"
+#include "../_libs/libs.hpp"
 #include <iostream>
 
 int get_home_input(int width) {
