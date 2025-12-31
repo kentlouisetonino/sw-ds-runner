@@ -5,7 +5,6 @@
 #include "types.hpp"
 
 void handler_binary_tree(void) {
-  int *level = 0;
   BinaryTreeNode *tree = nullptr;
   bool is_option_invalid = false;
 

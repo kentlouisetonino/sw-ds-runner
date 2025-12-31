@@ -1,6 +1,8 @@
 build:
-	g++ -o bin/main src/main.cpp
+	g++ -Wall -Wextra -Wpedantic -Werror -g -o bin/main src/main.cpp
 
-run:
-	make build
+debug: build
+	gdb ./bin/main
+
+run: build
 	./bin/main

@@ -38,6 +38,9 @@
 # Build the computer program.
 make build
 
+# Run the computer program with GDB.
+make debug
+
 # Run the computer program.
 make run
 ```
